@@ -3,6 +3,7 @@
 
 #define WEEK_DAYS_QUANTITY 7
 
+
 const char WEEK_DATES[] = {'S', 'M', 'T', 'W', 'T', 'F', 'S'};
 int DAYS_PER_MONTH[] = {31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31};
 
@@ -23,10 +24,18 @@ void get_month(char now[], char p_month[3])
 int get_date(char now[])
 {
   int current_day;
+  char stringfy_number[2] = {0, 0};
 
-  current_day = (int)now[9];
+  stringfy_number[0] = ascii_to_int((int)now[8]);
+  stringfy_number[1] = ascii_to_int((int)now[9]);
 
-  return ascii_to_int(current_day);
+  if (now[9] == ' ')
+    return ascii_to_int((int)now[8]);
+
+  stringfy_number[0] = stringfy_number[0] * 10;
+  current_day = stringfy_number[0] + stringfy_number[1];
+
+  return current_day;
 }
 
 int get_year(char now[])
@@ -57,9 +66,10 @@ int is_leap_year(int year)
 int jan_first_date_start(int year)
 {
   int example_year = 2023;
-  int date, year_diff, initial_value, example_date;
-
-  date = initial_value = example_date = 0;
+  int example_date = 0; // representa segunda
+  int date, year_diff;
+  int initial_value = 0;
+  date = 0;
 
   year_diff = year - example_year;
 
