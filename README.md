@@ -1,5 +1,7 @@
 # Calendar CLI 📅
 
+<iframe src="https://giphy.com/embed/lNnlsw4x17EKWH3GDR" width="480" height="306" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/calendar-lNnlsw4x17EKWH3GDR">via GIPHY</a></p>
+
 ## Compiling ⚙️
 
 initially you will have to compile the code written in C in a compiler installed in your machine, compatible with your processor.
