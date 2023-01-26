@@ -1,6 +1,6 @@
 # Calendar CLI 📅
 
-![CALENDAR GIF](https://giphy.com/embed/lNnlsw4x17EKWH3GDR)
+![CALENDAR GIF](https://i.giphy.com/media/lNnlsw4x17EKWH3GDR/giphy.webp)
 
 
 ## Compiling ⚙️
